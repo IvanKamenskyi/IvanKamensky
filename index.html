@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabele z rowspan i colspan</title>
+    <style>
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            margin: 20px 0;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Przykłady tabel</h1>
+
+    <h2>Zadanie 1: Tabela z rowspan</h2>
+    <table>
+        <caption>Tabela z rowspan</caption>
+        <tr>
+            <td rowspan="2">Komórka 1</td>
+            <td>Komórka 2</td>
+            <td>Komórka 3</td>
+        </tr>
+        <tr>
+            <td>Komórka 4</td>
+            <td>Komórka 5</td>
+        </tr>
+        <tr>
+            <td>Komórka 6</td>
+            <td>Komórka 7</td>
+            <td>Komórka 8</td>
+        </tr>
+    </table>
+
+    <h2>Zadanie 2: Tabela z colspan</h2>
+    <table>
+        <caption>Tabela z colspan</caption>
+        <tr>
+            <td>Komórka 1</td>
+            <td>Komórka 2</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
+        </tr>
+        <tr>
+            <td>Komórka 5</td>
+            <td colspan="2">Komórka 6 i 7</td>
+            <td>Komórka 8</td>
+        </tr>
+        <tr>
+            <td>Komórka 9</td>
+            <td>Komórka 10</td>
+            <td>Komórka 11</td>
+            <td>Komórka 12</td>
+        </tr>
+    </table>
+
+    <h2>Zadanie 3: Tabela z rowspan i colspan</h2>
+    <table>
+        <caption>Tabela z rowspan i colspan</caption>
+        <tr>
+            <td colspan="2">Komórka 1 i 2</td>
+            <td>Komórka 3</td>
+            <td>Komórka 4</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Komórka 5 i 6</td>
+            <td>Komórka 7</td>
+            <td>Komórka 8</td>
+            <td>Komórka 9</td>
+        </tr>
+        <tr>
+            <td>Komórka 10</td>
+            <td>Komórka 11</td>
+            <td>Komórka 12</td>
+        </tr>
+        <tr>
+            <td>Komórka 13</td>
+            <td>Komórka 14</td>
+            <td>Komórka 15</td>
+            <td>Komórka 16</td>
+        </tr>
+    </table>
+</body>
+</html>
